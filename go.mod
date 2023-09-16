@@ -1,4 +1,4 @@
-module serial
+module github.com/crgimenes/serial
 
 go 1.21.1
 
