@@ -8,6 +8,8 @@ import (
 )
 
 func main() {
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+
 	serialPort := flag.String("serial", "", "Serial port to use")
 	serialBaud := flag.Int("baud", 115200, "Baud rate")
 
