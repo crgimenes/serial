@@ -141,6 +141,7 @@ func getBaudRate(baud int) uint64 {
 		38400:  unix.B38400,
 		57600:  unix.B57600,
 		115200: unix.B115200,
+		230400: unix.B230400,
 	}
 
 	speed, ok := baudRates[baud]
