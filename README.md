@@ -81,3 +81,7 @@ Possible Future Work
 --------------------
 
 - better tests (loopback etc)
+
+## This fork
+
+This fork is a fork of [github.com/tarm/serial](https://github.com/tarm/serial). The main difference is that this fork is not using cgo, so it can be cross compiled. This fork is also using the [golang.org/x/sys/unix](https://godoc.org/golang.org/x/sys/unix) package instead of the [syscall](https://godoc.org/syscall) package.
