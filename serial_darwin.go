@@ -32,8 +32,6 @@ func (p *Port) Close() (err error) {
 }
 
 func openPort(name string, baud int, databits byte, parity Parity, stopbits StopBits, readTimeout time.Duration) (*Port, error) {
-	log.Printf("openPort(%s, %d, %d, %d, %d, %d)\n", name, baud, databits, parity, stopbits, readTimeout)
-
 	f, err := os.OpenFile(name, syscall.O_RDWR|syscall.O_NOCTTY|syscall.O_NONBLOCK, 0666)
 	if err != nil {
 		log.Printf("openPort: %s\n", err)
